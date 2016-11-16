@@ -1,0 +1,85 @@
+.container {
+  margin: 0 auto;
+  margin: 0 auto;
+  width: 720px;
+  height: 400px;
+}
+#slider {
+    width: 720px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 3px;
+}
+
+#slider .slides {
+    display: block;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 720px;
+    height: 400px;
+}
+
+.prevLink{
+  position: absolute;
+  top: 100px;
+  left: 2px;
+}
+.nextLink{
+  position: absolute;
+  top: 100px;
+  right: 2px;
+}
+
+.prevLink, .nextLink{
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  padding: 50px 5px;
+  border-radius: 5px;
+}
+
+.controlNav {
+  z-index: 20;
+  position: absolute;
+  bottom: 20px;
+  left: 280px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  padding: 5px 50px;
+  border-radius: 5px;
+}
+a:visited {
+    color: #FFF;
+}
+a {
+  text-decoration: none;
+}
+.directionNav button{
+  border: none;
+}
+
+/* helper css, since we don't have images */
+.slide1 {background: red;}
+.slide2 {background: blue;}
+.slide3 {background: green;}
+.slide4 {background: purple;}
+.slide5 {background: pink;}
+
+.active-image{
+	display: block;
+}
+
+.hidden-image {
+  display: none;
+}
+.next-image {
+  display: block;
+}
